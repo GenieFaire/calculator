@@ -8,6 +8,9 @@ function getNumber(number) {
 }
 
 function getOperator(operatorCapture) {
+    if (operation === '') {
+        errorMessage("On commence par les chiffres");
+    }
     if (result !== '') {
         operatorNumber = false;
         operation = result;
