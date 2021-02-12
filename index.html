@@ -1,11 +1,50 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Title of the document</title>
+<title>Ma calculatrice</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
+<h1>Ma calculatrice</h1>
+<table>
+    <thead>
+    <tr>
+        <th colspan="4" id="display">
+        </th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td onclick="getNumber('7')">7</td>
+        <td onclick="getNumber('8')">8</td>
+        <td onclick="getNumber('9')">9</td>
+        <td onclick="getOperator('+')">+</td>
+    </tr>
+    <tr>
+        <td onclick="getNumber('4')">4</td>
+        <td onclick="getNumber('5')">5</td>
+        <td onclick="getNumber('6')">6</td>
+        <td onclick="getOperator('-')">-</td>
+    </tr>
+    <tr>
+        <td onclick="getNumber('1')">1</td>
+        <td onclick="getNumber('2')">2</td>
+        <td onclick="getNumber('3')">3</td>
+        <td onclick="getOperator('x')">x</td>
+    </tr>
+    <tr>
+        <td onclick="reset('')">C</td>
+        <td onclick="getNumber('0')">0</td>
+        <td onclick="getRelative()">-/+</td>
+        <td onclick="getOperator('/')">/</td>
+    </tr>
+    <tr>
+        <td colspan="4" onclick="getResult()">calculer</td>
+    </tr>
+    </tbody>
+</table>
 </body>
 <script src="calculatrice.js"></script>
 </html>
