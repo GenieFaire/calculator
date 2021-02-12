@@ -10,18 +10,20 @@ function getNumber(number) {
 function getOperator(operatorCapture) {
     if (operation === '') {
         errorMessage("On commence par les chiffres");
-    }
-    if (result !== '') {
-        operatorNumber = false;
-        operation = result;
-    }
-    if (operatorNumber === true) {
-        errorMessage("Calcul à un seul opérateur");
     } else {
-        operatorNumber = true;
-        operation += ' ' + operatorCapture + ' ';
+        if (result !== '') {
+            operatorNumber = false;
+            operation = result;
+        }
+        if (operatorNumber === true) {
+            errorMessage("Calcul à un seul opérateur");
+        } else {
+            operatorNumber = true;
+            operation += ' ' + operatorCapture + ' ';
+        }
+        displayOperation();
     }
-    displayOperation();
+
 }
 
 // TODO faire passer le nombre négatif en positif
