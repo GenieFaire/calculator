@@ -13,6 +13,7 @@ td {
     text-align: center;
     font-size: 24px;
     font-weight: bold;
+    border-radius: 5px;
 }
 td:hover {
     background-color: aquamarine;
